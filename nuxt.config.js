@@ -25,6 +25,10 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // Simple usage
+    '@nuxtjs/vuetify',
+    // With options
+    ['@nuxtjs/vuetify', { /* module options */ }]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -36,7 +40,9 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: process.env.API_URL,
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
@@ -48,4 +54,5 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   serverMiddleware: ['~/api/index.js'],
+  modules: ['@nuxtjs/axios']
 }

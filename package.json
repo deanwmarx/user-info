@@ -11,17 +11,20 @@
     "lint": "npm run lint:js"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/axios": "^5.13.1",
     "@nuxtjs/pwa": "^3.3.5",
     "@prisma/client": "^2.21.2",
+    "axios": "^0.21.1",
     "core-js": "^3.8.3",
     "express": "^4.17.1",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "vue-axios": "^3.2.4"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/tailwindcss": "^3.4.2",
+    "@nuxtjs/vuetify": "^1.11.3",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^7.2.0",
