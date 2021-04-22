@@ -5,8 +5,8 @@ CREATE TABLE "user_info" (
     "last_name" TEXT NOT NULL,
     "email" TEXT NOT NULL,
     "cellphone" INTEGER,
-    "height" INTEGER NOT NULL,
-    "weight" INTEGER,
+    "height" DECIMAL NOT NULL,
+    "weight" DECIMAL,
     "recently_sick" BOOLEAN NOT NULL,
     "accepted" BOOLEAN NOT NULL
 );
